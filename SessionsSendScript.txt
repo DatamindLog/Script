@@ -1,20 +1,4 @@
-﻿let vCompany = 'DrFischer'; //Without Spaces!!!
-set vMonitoringQVD   ='lib://MonitoringQVD/';
-let vMonitoringQVD_URL='E'&'%3a%5c'&'QVD'&'%5c'&'Monitoring'&'%5c'; // E:\QVD\Monitoring\
-set vQwcConnectionName = 'lib://Web Connectors (qv_datamind)';
-let vToday=date(Today(),'YYYYMMDD');
-
-//	email settings:
-set vUserName = 'Clogs@datamind.co.il';//'datamind@dr-fischer.com';
-set vPassword = 'IYWB2h3TD7QYNe4n4wS5fw%3d%3d%3aoZtmaXghtPtIlcGkq77aqQ%3d%3d&'; //Web connectors =נוצר לאחר שהרצתי את הפרטים שלי ב
-set vRecipient	=	'Clogs@datamind.co.il';
-set vQMC= 'https://qv.dr-fischer.com/qmc/tasks';
-set vMailServer	='smtp.office365.com';	//'Mail10.Dr-Fischer.Com';
-set vPort	=	587;
-set vSSLMode	=	'Explicit';//'None';
-let vSubject	=	vCompany&'_Sessions.'&vToday;
-EXIT SCRIPT
- ///$tab Initialize
+///$tab Initialize
 //	Sessions Monitor
 LET yr			= year(ReloadTime());
 SET copyright = 'Copyright 1993-$(yr) Qliktech International AB';
