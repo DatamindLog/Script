@@ -1,0 +1,23 @@
+﻿///$tab Main
+SET ThousandSep=',';
+SET DecimalSep='.';
+SET MoneyThousandSep=',';
+SET MoneyDecimalSep='.';
+SET MoneyFormat='‏#,##0.00 ₪;‏‎-#,##0.00 ₪';
+SET TimeFormat='h:mm:ss';
+SET DateFormat='D.M.YYYY';
+SET TimestampFormat='D.M.YYYY h:mm:ss[.fff]';
+SET FirstWeekDay=6;
+SET BrokenWeeks=1;
+SET ReferenceDay=0;
+SET FirstMonthOfYear=1;
+SET CollationLocale='he-IL';
+SET MonthNames='ינו׳;פבר׳;מרץ;אפר׳;מאי;יוני;יולי;אוג׳;ספט׳;אוק׳;נוב׳;דצמ׳';
+SET LongMonthNames='ינואר;פברואר;מרץ;אפריל;מאי;יוני;יולי;אוגוסט;ספטמבר;אוקטובר;נובמבר;דצמבר';
+SET DayNames='יום ב׳;יום ג׳;יום ד׳;יום ה׳;יום ו׳;שבת;יום א׳';
+SET LongDayNames='יום שני;יום שלישי;יום רביעי;יום חמישי;יום שישי;יום שבת;יום ראשון';
+
+R_Table:
+LOAD RecNo() as R
+AutoGenerate (12)
+;
